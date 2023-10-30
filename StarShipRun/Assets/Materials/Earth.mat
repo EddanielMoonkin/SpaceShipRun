@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Earth
-  m_Shader: {fileID: 4800000, guid: 265d5a3b8b509d941909f7af95c38551, type: 3}
+  m_Shader: {fileID: 4800000, guid: bdbd8778032180e4a8e95b6c93271ea9, type: 3}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -80,7 +80,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Alpha: 0.3
+    - _Alpha: 0.308
     - _BumpScale: 1
     - _CityEmissionStrength: 0.34
     - _CloudAlpha: 0.589
@@ -90,10 +90,12 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _Height: -0.01
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.08
+    - _Seed: 4476
     - _Shininess: 470
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -102,6 +104,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.09344961, g: 0.1877532, b: 0.7924528, a: 1}
+    - _Color2: {r: 0.19804697, g: 0.5188679, b: 0.16887683, a: 1}
+    - _Color3: {r: 0.2264151, g: 0.13777144, b: 0.13777144, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Illumi: {r: 1, g: 1, b: 1, a: 0}
     - _SpecularColour: {r: 1, g: 1, b: 1, a: 1}
