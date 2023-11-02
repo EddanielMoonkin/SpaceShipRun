@@ -9,7 +9,7 @@ public partial class CameraRenderer
     private ScriptableRenderContext _context;
     private Camera _camera;
     private CommandBuffer _commandBuffer;
-    private const string bufferName = "Camera Render";
+    //private const string bufferName = "Camera Render";
     private CullingResults _cullingResult;
     private static readonly List<ShaderTagId> drawingShaderTagIds = 
         new List<ShaderTagId>{new ShaderTagId("SRPDefaultUnlit"),};
@@ -37,7 +37,7 @@ public partial class CameraRenderer
         _cullingResult = _context.Cull(ref parameters);
         _context.SetupCameraProperties(_camera);
         _commandBuffer.ClearRenderTarget(true, true, Color.clear);
-        _commandBuffer.BeginSample(bufferName);
+        _commandBuffer.BeginSample(_camera.name);
         ExecuteCommandBuffer();        
     }
 
@@ -57,7 +57,7 @@ public partial class CameraRenderer
 
     private void Submit()
     {
-        _commandBuffer.EndSample(bufferName);
+        _commandBuffer.EndSample(_camera.name);
         ExecuteCommandBuffer();
         _context.Submit();
     }
