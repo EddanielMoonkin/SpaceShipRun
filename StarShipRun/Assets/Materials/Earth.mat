@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Earth
-  m_Shader: {fileID: 4800000, guid: 9458a6ed4a7e97e4abc45eee5fdc11b3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 01f563a9b9eac3544bbb5006a606cfea, type: 3}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -100,11 +100,14 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.08
+    - _PremulAlpha: 0
     - _Seed: 4476
     - _Shininess: 470
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Threshold: 6.88
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
@@ -113,6 +116,7 @@ Material:
     - _Color1: {r: 0.09344961, g: 0.1877532, b: 0.7924528, a: 1}
     - _Color2: {r: 0.19804697, g: 0.5188679, b: 0.16887683, a: 1}
     - _Color3: {r: 0.2264151, g: 0.13777144, b: 0.13777144, a: 1}
+    - _Emission: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Illumi: {r: 1, g: 1, b: 1, a: 0}
     - _SpecularColour: {r: 1, g: 1, b: 1, a: 1}

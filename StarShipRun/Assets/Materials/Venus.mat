@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Venus
-  m_Shader: {fileID: 4800000, guid: 9458a6ed4a7e97e4abc45eee5fdc11b3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 01f563a9b9eac3544bbb5006a606cfea, type: 3}
   m_ShaderKeywords: _CLIPPING _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -83,10 +83,13 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _PremulAlpha: 0
     - _Seed: 1946
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
+    - _Threshold: 4.48
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
@@ -95,5 +98,6 @@ Material:
     - _Color1: {r: 0.9528302, g: 0.87122613, b: 0.085395135, a: 1}
     - _Color2: {r: 0.9056604, g: 0.7028816, b: 0.10679956, a: 1}
     - _Color3: {r: 0.745283, g: 0.109208286, b: 0.059763268, a: 1}
+    - _Emission: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Saturn
-  m_Shader: {fileID: 4800000, guid: 9458a6ed4a7e97e4abc45eee5fdc11b3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 01f563a9b9eac3544bbb5006a606cfea, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -78,10 +78,13 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _PremulAlpha: 0
     - _Seed: 3818
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Threshold: 10
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
@@ -90,6 +93,6 @@ Material:
     - _Color1: {r: 0.6603774, g: 0.50513744, b: 0.41429335, a: 1}
     - _Color2: {r: 0.5, g: 0.26336476, b: 0.1957547, a: 1}
     - _Color3: {r: 0.1981132, g: 0.13251157, b: 0.08877714, a: 1}
-    - _Emission: {r: 0.6037736, g: 0.18162295, b: 0, a: 1}
+    - _Emission: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
