@@ -1,9 +1,12 @@
+using System.Collections;
+using System.Threading.Tasks;
 using Main;
 using Mechanics;
 using Network;
 using UI;
 using UnityEngine;
 using UnityEngine.Networking;
+
 
 namespace Characters
 {
@@ -78,6 +81,16 @@ namespace Characters
                     velocity);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * speed);
             }
+
+            if (Input.GetKeyUp(KeyCode.V))
+            {
+                StartCoroutine(RotateObject(5f, 360.0f));
+            }
+
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                RotateObjectAsync(2f, -360.0f);
+            }
         }
 
         protected override void FromServerUpdate() { }
@@ -96,6 +109,46 @@ namespace Characters
             gameObject.SetActive(false);
             transform.position = new Vector3(100, 100, 100);
             gameObject.SetActive(true);
+        }
+
+        [ClientCallback]
+        public IEnumerator RotateObject(float duration, float angle)
+        {
+            float startRotation = transform.eulerAngles.z;
+            float endRotation = startRotation + angle;
+            float t = 0.0f;
+
+            while (t < duration)
+            {
+                t += Time.deltaTime;
+
+                float zRotation = Mathf.Lerp(startRotation, endRotation, t / duration) % angle;
+
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y,
+                zRotation);
+
+                yield return null;
+            }
+        }
+
+        [ClientCallback]
+        public async void RotateObjectAsync(float duration, float angle)
+        {
+            float startRotation = transform.eulerAngles.z;
+            float endRotation = startRotation + angle;
+            float t = 0.0f;
+
+            while (t < duration)
+            {
+                t += Time.deltaTime;
+
+                float zRotation = Mathf.Lerp(startRotation, endRotation, t / duration) % angle;
+
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y,
+                zRotation);
+
+                await Task.Yield();
+            }
         }
     }
 }
