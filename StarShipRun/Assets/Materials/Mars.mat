@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mars
-  m_Shader: {fileID: 4800000, guid: bdbd8778032180e4a8e95b6c93271ea9, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9458a6ed4a7e97e4abc45eee5fdc11b3, type: 3}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: d7f881be371b1e541ac50aea4bb687d0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 93fa7224b9d769d46a38b2d84cbf56d3, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -62,6 +66,7 @@ Material:
     m_Floats:
     - _Alpha: 0.634
     - _BumpScale: 1
+    - _Clipping: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -80,6 +85,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 0.2783019, b: 0.2783019, a: 1}
     - _Color1: {r: 1, g: 0.60341835, b: 0, a: 1}
     - _Color2: {r: 0.7735849, g: 0.2256754, b: 0.04743683, a: 1}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce1b0a99efef964c94e787fbd5d6d61, type: 3}
+  m_Name: Custom RP
+  m_EditorClassIdentifier: 
+  useDynamicBatching: 0
+  useGPUInstancing: 1
+  useSRPBatcher: 0
+  shadows:
+    maxDistance: 12
+    distanceFade: 0.09
+    directional:
+      atlasSize: 1024
+      cascadeCount: 4
+      cascadeRatio1: 0.074
+      cascadeRatio2: 0.325
+      cascadeRatio3: 0.52
+      cascadeFade: 0.09
